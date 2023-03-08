@@ -1,10 +1,10 @@
-# Golden_Time
+# 인천대학교 2023 캡스톤디자인 Golden_Time팀
 
 ##
 2023 Capston Design
 ##
 #개발 블로그 
-##
+##정종원 : https://simth999wrld.tistory.com/42
 ###
 🤔정종원 😡신상우 😎이재혁 
 무친 팀워크를 기반한 무친 프로젝트 시작
