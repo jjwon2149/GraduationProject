@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="lA2-ek-pfK">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--RealTimeVideo-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController restorationIdentifier="RealTImeVideoViewController" storyboardIdentifier="RealTImeVideoViewController" id="BYZ-38-t0r" customClass="RealTImeVideoViewController" customModule="GraduationApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" restorationIdentifier="SettingViewController" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="jte-rJ-Wvb">
+                                <rect key="frame" x="0.0" y="58.999999999999972" width="393" height="427.33333333333326"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TMb-Cd-uJ1">
+                                        <rect key="frame" x="140.33333333333334" y="0.0" width="112.33333333333334" height="34.333333333333336"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="arrow.triangle.2.circlepath" catalog="system" title="Refresh"/>
+                                        <connections>
+                                            <action selector="refreshButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lv8-DV-EgD"/>
+                                        </connections>
+                                    </button>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ONc-r1-RD8">
+                                        <rect key="frame" x="0.0" y="42.333333333333314" width="393" height="385"/>
+                                        <subviews>
+                                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sPM-KZ-y5w">
+                                                <rect key="frame" x="21.666666666666657" y="17.333333333333343" width="350" height="350"/>
+                                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="350" id="HOr-hG-4ZT"/>
+                                                    <constraint firstAttribute="width" constant="350" id="Otd-6q-TQp"/>
+                                                </constraints>
+                                                <wkWebViewConfiguration key="configuration" allowsInlineMediaPlayback="YES">
+                                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                                    <wkPreferences key="preferences"/>
+                                                </wkWebViewConfiguration>
+                                            </wkWebView>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstItem="sPM-KZ-y5w" firstAttribute="centerY" secondItem="ONc-r1-RD8" secondAttribute="centerY" id="5X1-4p-8Fw"/>
+                                            <constraint firstItem="sPM-KZ-y5w" firstAttribute="centerX" secondItem="ONc-r1-RD8" secondAttribute="centerX" id="9cp-v2-slZ"/>
+                                            <constraint firstAttribute="height" constant="385" id="cuh-qh-FeO"/>
+                                            <constraint firstAttribute="width" constant="393" id="iZV-LP-VFo"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="ONc-r1-RD8" secondAttribute="trailing" id="9IG-0x-IYB"/>
+                                    <constraint firstItem="ONc-r1-RD8" firstAttribute="top" secondItem="TMb-Cd-uJ1" secondAttribute="bottom" constant="8" id="Fj7-WF-eSO"/>
+                                    <constraint firstAttribute="bottom" secondItem="ONc-r1-RD8" secondAttribute="bottom" id="PEm-Ly-Afb"/>
+                                    <constraint firstItem="ONc-r1-RD8" firstAttribute="leading" secondItem="jte-rJ-Wvb" secondAttribute="leading" id="RRz-tr-JUa"/>
+                                </constraints>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Jd-AN-Sv5">
+                                <rect key="frame" x="0.0" y="605.66666666666663" width="393" height="20.333333333333371"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="jte-rJ-Wvb" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="03B-PC-bny"/>
+                            <constraint firstItem="jte-rJ-Wvb" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="0cx-nm-Pcv"/>
+                            <constraint firstItem="7Jd-AN-Sv5" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="3nh-36-Mf9"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="jte-rJ-Wvb" secondAttribute="bottom" constant="282.67000000000002" id="4jd-R1-YPd"/>
+                            <constraint firstItem="jte-rJ-Wvb" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="MfN-fF-SMv"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="7Jd-AN-Sv5" secondAttribute="trailing" id="TKB-hB-5eA"/>
+                            <constraint firstItem="7Jd-AN-Sv5" firstAttribute="top" secondItem="jte-rJ-Wvb" secondAttribute="bottom" constant="119.33" id="TUe-Ru-vnx"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="7Jd-AN-Sv5" secondAttribute="bottom" constant="143" id="kqb-Ko-9Sh"/>
+                            <constraint firstItem="jte-rJ-Wvb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="zbt-Fp-Cbo"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="RealTimeVideo" image="camera" catalog="system" id="l5N-MK-39n"/>
+                    <navigationItem key="navigationItem" id="bUA-JA-Mwp"/>
+                    <connections>
+                        <outlet property="testLabel" destination="7Jd-AN-Sv5" id="NMW-IX-YY5"/>
+                        <outlet property="webView" destination="sPM-KZ-y5w" id="srh-pa-1e9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="962.59541984732823" y="3.5211267605633805"/>
+        </scene>
+        <!--Recorded-->
+        <scene sceneID="Tcd-po-0gs">
+            <objects>
+                <viewController id="A6J-gh-kf7" customClass="RecentVideoViewController" customModule="GraduationApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Pgp-CU-iD8">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="imk-xq-bBM"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Recorded" image="camera.rotate" catalog="system" id="ZcX-1t-P3S"/>
+                    <navigationItem key="navigationItem" id="VuB-3E-zcT"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZXW-uC-eIu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="187" y="4"/>
+        </scene>
+        <!--Setting-->
+        <scene sceneID="7QL-Ng-jj3">
+            <objects>
+                <viewController restorationIdentifier="SettingViewController" storyboardIdentifier="SettingViewController" id="pZF-eN-d7F" customClass="SettingViewController" customModule="GraduationApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="r41-hi-RNR">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="M4x-aQ-Mag"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Setting" image="gearshape" catalog="system" id="oZZ-CW-Wk7"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gIK-4O-SWV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1715" y="4"/>
+        </scene>
+        <!--Base Tabbar Controller-->
+        <scene sceneID="Xvu-ot-vNn">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="lA2-ek-pfK" customClass="BaseTabbarController" customModule="GraduationApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="a6d-Dy-s3o">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="A6J-gh-kf7" kind="relationship" relationship="viewControllers" id="gHb-va-cgI"/>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="dgM-Rz-pmG"/>
+                        <segue destination="pZF-eN-d7F" kind="relationship" relationship="viewControllers" id="V4C-Ve-xcP"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZM0-A4-PVZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="962.59541984732823" y="-827.46478873239437"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="arrow.triangle.2.circlepath" catalog="system" width="128" height="104"/>
+        <image name="camera" catalog="system" width="128" height="93"/>
+        <image name="camera.rotate" catalog="system" width="128" height="93"/>
+        <image name="gearshape" catalog="system" width="128" height="123"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
