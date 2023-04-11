@@ -1,14 +1,17 @@
 import time
-
 from flask import Flask, render_template, Response
 import cv2
 import numpy as np
 import threading
 import datetime
+import os
 
+import pyrebase
+import json
 
 
 app = Flask(__name__)
+
 # 웹캠 신호 받기
 VideoSignal = cv2.VideoCapture(0)
 VideoSignal.set(3, 720)
@@ -23,13 +26,28 @@ with open("ClassNames.names", "r") as f:
 layer_names = YOLO_net.getLayerNames()
 output_layers = [layer_names[i-1] for i in YOLO_net.getUnconnectedOutLayers()]
 
+# "apikey": "내 웹 키"
+config = {
+  "apiKey": "AIzaSyC2xG4Q9IjP7itkhAOLdBOw_bVVZtWpUNo",
+  "authDomain": "goldentime-c98fa.firebaseapp.com",
+  "databaseURL": "https://goldentime-c98fa-default-rtdb.asia-southeast1.firebasedatabase.app",
+  "projectId": "goldentime-c98fa",
+  "storageBucket": "goldentime-c98fa.appspot.com",
+  "messagingSenderId": "179912977993",
+  "appId": "1:179912977993:web:6fe65c3b3bf9202617d998",
+  "measurementId": "G-C6H0VTFBXR"
+};
+
+firebase = pyrebase.initialize_app(config)
+storage = firebase.storage()
+
 #-- GPU 사용
 # YOLO_net.setPreferableBackend(cv2.dnn.DNN_BACKEND_CUDA)
 # YOLO_net.setPreferableTarget(cv2.dnn.DNN_TARGET_CUDA)
 
+folderpath = "C:/Users/genar/Desktop/joljak/GoldenTime/objectDetection/video"
 
 class VideoStreamingThread(threading.Thread):
-
     def __init__(self):
         threading.Thread.__init__(self)
 
@@ -100,13 +118,25 @@ class VideoStreamingThread(threading.Thread):
                 # 녹화 시작
                 print("record start")
                 recording = True
-                output = cv2.VideoWriter("웹캠 " + nowDatetime_path + ".avi", fourcc, 7,
+                filename = "웹캠 " + nowDatetime_path + ".avi"
+                output = cv2.VideoWriter(os.path.join(folderpath, filename), fourcc, 7,
                                 (frame.shape[1], frame.shape[0])) # 파일명, 코덱, FPS, 해상도 설정
             elif len(cond) == 30 and recording:
                 # 녹화 종료
                 print("record end")
                 recording = False
                 output.release()
+                upload_file = folderpath + "/" + filename
+                storage.child("폭력 감지된 비디오/" + filename).put(upload_file)
+                fileUrl = storage.child("폭력 감지된 비디오/" + filename).get_url(1)  # 0은 저장소 위치, 1은 다운로드 url 경로이다.
+                # 업로드한 파일과 다운로드 경로를 database에 저장하기. 그래야 나중에 사용할 수 있음. storage에서 검색은 안되기 때문임.
+                # 데이터베이스에 파일 정보 저장
+                db = firebase.database()
+                d = {}
+                d[filename] = fileUrl
+                data = json.dumps(d)
+                results = db.child("폭력 감지된 비디오").push(data)
+                print("OK")
                 output = None
                 cond = []
 
@@ -123,7 +153,7 @@ class VideoStreamingThread(threading.Thread):
 
 
 
-
+# threads = []
 
 
 @app.route('/')
