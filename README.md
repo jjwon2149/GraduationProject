@@ -8,7 +8,7 @@
 
 * [![Swift][Swift]][Swift-url]
 
-* * ![Xcode](https://img.shields.io/badge/Xcode-007ACC?style=for-the-badge&logo=Xcode&logoColor=white)
+*  ![Xcode](https://img.shields.io/badge/Xcode-007ACC?style=for-the-badge&logo=Xcode&logoColor=white)
 
 * [![AWS][AWS]][AWS-url]
 
