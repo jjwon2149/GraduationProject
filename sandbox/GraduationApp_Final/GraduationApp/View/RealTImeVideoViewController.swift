@@ -1,17 +1,12 @@
-//
-//  RealTImeVideoViewController.swift
-//  GraduationApp
-//
-//  Created by 정종원 on 2023/02/06.
-//
-
 import UIKit
 import WebKit
 
 class RealTImeVideoViewController: UIViewController, WKUIDelegate {
-
-    @IBOutlet weak var webView: WKWebView!
     
+
+    @IBOutlet weak var testLabel: UILabel!
+    
+    @IBOutlet weak var webView: WKWebView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,14 +15,22 @@ class RealTImeVideoViewController: UIViewController, WKUIDelegate {
         self.tabBarController?.selectedIndex = 1
         
         self.tabBarController?.tabBar.isHidden = false
-        
-        loadWebPage("http://192.168.35.11:2204/")
+                
+//        loadWebPage("http://192.168.99.122:2204/")
+        loadWebPage("http://52.79.155.38:2204/")
+
         
 //        let stream_url = "http://192.168.35.11:2204/"
 //
 //        webView.uiDelegate = self
 //        webView.load(NSURLRequest(url: NSURL(string: stream_url )! as URL) as URLRequest)
     }
+    
+//    override func viewWillAppear(_ animated: Bool) {
+//        let tabbar = tabBarController as! BaseTabbarController
+//        testLabel.text = String(describing: tabbar.theURL)
+//
+//    }
     
 
     func loadWebPage(_ url:String){
@@ -36,4 +39,8 @@ class RealTImeVideoViewController: UIViewController, WKUIDelegate {
         webView.load(myRequest)
     }
 
+
+    @IBAction func refreshButton(_ sender: UIButton) {
+        loadWebPage("http://52.79.155.38:2204/")
+    }
 }

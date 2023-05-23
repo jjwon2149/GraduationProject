@@ -1,19 +1,16 @@
 //
-//  SettingViewController.swift
+//  UITabBarController.swift
 //  GraduationApp
 //
-//  Created by 정종원 on 2023/02/06.
+//  Created by 정종원 on 2023/03/07.
 //
 
 import UIKit
 
-class SettingViewController: UIViewController {
+class UITabBarController: UITabBarController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        //탭바 순서
-        self.tabBarController?.selectedIndex = 2
 
         // Do any additional setup after loading the view.
     }

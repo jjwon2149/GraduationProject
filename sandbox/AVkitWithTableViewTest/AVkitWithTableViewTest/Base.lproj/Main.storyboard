@@ -16,23 +16,26 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="WGJ-1l-gGe">
-                                <rect key="frame" x="0.0" y="59" width="393" height="759"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="WGJ-1l-gGe">
+                                <rect key="frame" x="0.0" y="76" width="393" height="700"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="700" id="0j0-cn-d2f"/>
+                                    <constraint firstAttribute="width" constant="393" id="EXP-O6-FQx"/>
+                                </constraints>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="A5W-vF-Qo8" customClass="TableViewCell" customModule="AVkitWithTableViewTest" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="50" width="393" height="44"/>
+                                        <rect key="frame" x="0.0" y="50" width="393" height="44.333332061767578"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="A5W-vF-Qo8" id="xeK-Uv-Z2w">
-                                            <rect key="frame" x="0.0" y="0.0" width="393" height="44"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="393" height="44.333332061767578"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Qb-SG-17Y">
-                                                    <rect key="frame" x="20" y="10.999999999999998" width="353" height="21.333333333333329"/>
+                                                    <rect key="frame" x="57.666666666666657" y="0.0" width="278" height="44.333333333333336"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="height" constant="21" id="A50-As-zfT"/>
-                                                        <constraint firstAttribute="width" constant="353" id="qXz-fO-qQw"/>
+                                                        <constraint firstAttribute="height" constant="44" id="cES-Cl-TOn"/>
+                                                        <constraint firstAttribute="width" constant="278" id="kvX-1T-JQT"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                                     <nil key="textColor"/>
@@ -40,10 +43,10 @@
                                                 </label>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="9Qb-SG-17Y" firstAttribute="top" secondItem="xeK-Uv-Z2w" secondAttribute="topMargin" id="5BJ-96-t8g"/>
-                                                <constraint firstItem="9Qb-SG-17Y" firstAttribute="leading" secondItem="xeK-Uv-Z2w" secondAttribute="leadingMargin" id="BpP-HS-baJ"/>
-                                                <constraint firstItem="9Qb-SG-17Y" firstAttribute="trailing" secondItem="xeK-Uv-Z2w" secondAttribute="trailingMargin" id="WsW-GJ-6Kd"/>
-                                                <constraint firstAttribute="bottomMargin" secondItem="9Qb-SG-17Y" secondAttribute="bottom" constant="0.67000000000000004" id="noI-yI-mJB"/>
+                                                <constraint firstItem="9Qb-SG-17Y" firstAttribute="centerY" secondItem="xeK-Uv-Z2w" secondAttribute="centerY" id="06V-vO-Rqq"/>
+                                                <constraint firstItem="9Qb-SG-17Y" firstAttribute="top" secondItem="xeK-Uv-Z2w" secondAttribute="top" id="nhs-47-x8i"/>
+                                                <constraint firstAttribute="bottom" secondItem="9Qb-SG-17Y" secondAttribute="bottom" id="qAC-Tz-2qq"/>
+                                                <constraint firstItem="9Qb-SG-17Y" firstAttribute="centerX" secondItem="xeK-Uv-Z2w" secondAttribute="centerX" id="xfe-ZZ-wNV"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
@@ -55,6 +58,14 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="WGJ-1l-gGe" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Gxs-5x-cPE"/>
+                            <constraint firstItem="WGJ-1l-gGe" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="hON-r6-eHX"/>
+                            <constraint firstItem="WGJ-1l-gGe" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="lSV-8p-MMJ"/>
+                            <constraint firstItem="WGJ-1l-gGe" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="otX-UP-Qxo"/>
+                            <constraint firstItem="WGJ-1l-gGe" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="110" id="uUf-fl-LTK"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="WGJ-1l-gGe" secondAttribute="bottom" id="yJw-Ta-loN"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="TableView" destination="WGJ-1l-gGe" id="Uc2-Bk-6k5"/>

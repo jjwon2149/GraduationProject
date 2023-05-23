@@ -1,10 +1,9 @@
 //
 //  ViewController.swift
-//  AVkitWithTableViewTest
+//  AVkitWithTableView
 //
-//  Created by 정종원 on 2023/02/11.
+//  Created by 정종원 on 2023/02/08.
 //
-
 
 import UIKit
 import Foundation
@@ -21,7 +20,6 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     var ref: DatabaseReference!
 
     @IBOutlet weak var TableView: UITableView!
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -92,10 +90,6 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     
     
-//    @IBAction func downloadVideo(_ sender: Any) {
-//        print("download")
-//    }
-    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -103,3 +97,4 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
 
 
 }
+
