@@ -50,7 +50,7 @@ https://simth999wrld.tistory.com
 
 [Swift]: https://img.shields.io/badge/Swift-F05138?style=for-the-badge&logo=Swift&logoColor=white
 [Swift-url]: https://developer.apple.com/
-[AWS]: https://img.shields.io/badge/AWS-FF9900?style=for-the-badge&logo=Swift&logoColor=#232F3E
+[AWS]: https://img.shields.io/badge/AWS-FF9900?style=for-the-badge&logo=AWS&logoColor=#232F3E
 [AWS-url]: https://aws.amazon.com/
 
 [React.js]: https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB
