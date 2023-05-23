@@ -1,7 +1,6 @@
 <h1 align="center"> 인천대학교 2023 캡스톤디자인 Golden_Time팀 </h1> <br>
 <h2 align="center"> 실시간 위협행동 감지 시스템 </h2> <br>
 
-<p align="center">
 
 
 ##
@@ -10,7 +9,6 @@
 
 ### Built With
 
-This section should list any major frameworks/libraries used to bootstrap your project. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
 
 * [![Swift][Swift]][Swift-url]
 * [![React][React.js]][React-url]
