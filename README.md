@@ -8,6 +8,20 @@
 2023 Capston Design
 ##
 
+### Built With
+
+This section should list any major frameworks/libraries used to bootstrap your project. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
+
+* [![Next][Next.js]][Next-url]
+* [![React][React.js]][React-url]
+* [![Vue][Vue.js]][Vue-url]
+* [![Angular][Angular.io]][Angular-url]
+* [![Svelte][Svelte.dev]][Svelte-url]
+* [![Laravel][Laravel.com]][Laravel-url]
+* [![Bootstrap][Bootstrap.com]][Bootstrap-url]
+* [![JQuery][JQuery.com]][JQuery-url]
+
+
 ## Contributors
 
 * 정종원 - jjwon2149@gmail.com <br>
@@ -33,5 +47,6 @@ https://simth999wrld.tistory.com/42
 * 긴급 신고 기능
 * 폭력 영상 재확인 가능
 
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
