@@ -10,12 +10,14 @@
 
 ## Contributors
 
-* 정종원 - jjwon2149@gmail.com
+* 정종원 - jjwon2149@gmail.com <br>
+https://simth999wrld.tistory.com/42
+
 * 신상우 - 입력바람
 * 이재혁 - 입력바람
 
 ##개발 블로그 
-###정종원 : https://simth999wrld.tistory.com/42
+###정종원 : https://simth999wrld.tistory.com/42 <br>
 
 ## Features
 
