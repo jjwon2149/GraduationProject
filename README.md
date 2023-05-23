@@ -1,12 +1,6 @@
 <h1 align="center"> 인천대학교 2023 캡스톤디자인 Golden_Time팀 </h1> <br>
 <h2 align="center"> 실시간 위협행동 감지 시스템 </h2> <br>
 
-
-
-##
-2023 Capston Design
-##
-
 ### Built With
 
 
