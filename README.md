@@ -11,22 +11,13 @@
 ## Contributors
 
 * 정종원 - jjwon2149@gmail.com
-* 신상우 - ysknic91@gmail.com
-* 이재혁 - sgwannabe@gmail.com
+* 신상우 - 입력바람
+* 이재혁 - 입력바람
 
-#개발 블로그 
-##정종원 : https://simth999wrld.tistory.com/42
-
-###
-프로젝트 내용 : 
-
-라즈베리 파이 카메라(CCTV)에서 폭력상황이 인지가 된다면 iOS앱에서 실시간으로 확인, 폭력상황의 영상 재확인 가능.
-
-###
+##개발 블로그 
+###정종원 : https://simth999wrld.tistory.com/42
 
 ## Features
-
-아래의 기능들을 쌉 사용가능 :
 
 ###서버
 * 서버는 AWS EC2 g4dn인스턴스(GPU포함)에서 Ubuntu 18.04 환경에서 실행.
