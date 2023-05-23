@@ -6,7 +6,8 @@
 
 * [![Swift][Swift]][Swift-url]
 * [![AWS][AWS]][AWS-url]
-* [![React][React.js]][React-url]
+
+*![Xcode](https://img.shields.io/badge/Xcode-007ACC?style=for-the-badge&logo=Xcode&logoColor=white)
 * [![Vue][Vue.js]][Vue-url]
 * [![Angular][Angular.io]][Angular-url]
 * [![Svelte][Svelte.dev]][Svelte-url]
@@ -46,6 +47,9 @@ https://simth999wrld.tistory.com
 
 <!--
 <img src="https://img.shields.io/badge/텍스트-컬러코드?style=원하는스타일&logo=아이콘이름&logoColor=white"/>
+
+https://github.com/Ileriayo/markdown-badges
+
 -->
 
 [Swift]: https://img.shields.io/badge/Swift-F05138?style=for-the-badge&logo=Swift&logoColor=white
