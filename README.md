@@ -5,6 +5,7 @@
 
 
 * [![Swift][Swift]][Swift-url]
+* [![AWS][AWS]][AWS-url]
 * [![React][React.js]][React-url]
 * [![Vue][Vue.js]][Vue-url]
 * [![Angular][Angular.io]][Angular-url]
@@ -17,7 +18,7 @@
 ## Contributors
 
 * 정종원 - jjwon2149@gmail.com <br>
-https://simth999wrld.tistory.com/42
+https://simth999wrld.tistory.com
 
 * 신상우 - 입력바람
 * 이재혁 - 입력바람
@@ -49,6 +50,9 @@ https://simth999wrld.tistory.com/42
 
 [Swift]: https://img.shields.io/badge/Swift-F05138?style=for-the-badge&logo=Swift&logoColor=white
 [Swift-url]: https://developer.apple.com/
+[AWS]: https://img.shields.io/badge/AWS-FF9900?style=for-the-badge&logo=Swift&logoColor=#232F3E
+[AWS-url]: https://aws.amazon.com/
+
 [React.js]: https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB
 [React-url]: https://reactjs.org/
 [Vue.js]: https://img.shields.io/badge/Vue.js-35495E?style=for-the-badge&logo=vuedotjs&logoColor=4FC08D
