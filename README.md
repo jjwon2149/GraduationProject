@@ -55,7 +55,7 @@ https://simth999wrld.tistory.com/42
 <img src="https://img.shields.io/badge/텍스트-컬러코드?style=원하는스타일&logo=아이콘이름&logoColor=white"/>
 -->
 
-[Swift]: https://img.shields.io/badge/Swift-F05138?style=flat-square&logo=Swift&logoColor=white
+[Swift]: https://img.shields.io/badge/Swift-F05138?style=for-the-badge&logo=Swift&logoColor=white
 [Swift-url]: https://developer.apple.com/
 [React.js]: https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB
 [React-url]: https://reactjs.org/
