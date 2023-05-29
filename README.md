@@ -43,6 +43,7 @@
 * Dataset은 AI-HUB 이상행동 CCTV Data 이용
 * class는 Punch, Kick, Falldown으로 구성
 * 특정 시간동안 class 내에 있는 행동들이 특정 횟수 이상 감지될 때 위험한 상황으로 판단
+* 정확도는 mAP 기준 86.21%
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
