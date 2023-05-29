@@ -14,7 +14,7 @@
 |                                             정종원                                              |                                               이재혁                                               |                                               신상우                                               |
 | :---------------------------------------------------------------------------------------------: | :------------------------------------------------------------------------------------------------: | :------------------------------------------------------------------------------------------------: | 
 | ![프로필_ㅈㅈㅇ](https://github.com/NewP1/Golden_Time/assets/45623603/bde33cb0-511a-4b38-8eaa-b28790cd6ef6) | ![프로필_ㅇㅈㅎ](https://github.com/NewP1/Golden_Time/assets/45623603/5db019a1-1c2b-4e1f-ae86-80325598f211) | ![프로필_ㅅㅅㅇ](https://github.com/NewP1/Golden_Time/assets/45623603/1aa75a4c-c397-4cab-bd62-8de5b025e78d) |
-|                            [yapiyapo](https://github.com/jjwon2149)                            |                             [jaehyeok](https://jaehyuk712gmail.com)                              |                           [sangwoo](https://newsrain@naver.com)                            |
+|                            [yapiyapo](https://github.com/jjwon2149)                            |                             [jaehyk](https://jaehyuk712gmail.com)                              |                           [sangwoo](https://newsrain@naver.com)                            |
 
 
 ## Architecture 
