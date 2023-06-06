@@ -1,7 +1,7 @@
 <a name="readme-top"></a>
 
 <h1 align="center"> 인천대학교 2023 캡스톤디자인 Golden_Time팀 (은상) </h1> <br>
-<h2 align="center"> 실시간 위협행동 감지 시스템 </h2> <br>
+<h2 align="center"> 위협 행동 실시간 감지 시스템 </h2> <br>
 
 ## Built With
 
