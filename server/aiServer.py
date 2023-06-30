@@ -40,16 +40,9 @@ print('Socket now listening')
 conn, addr = s.accept()
 print('addraccept')
 
-# "apikey": "내 웹 키"
+# firebase key
 config = {
-    "apiKey": "AIzaSyDemQe9Xq0glQDqqCrBI2MApQN6BgKkfzY",
-    "authDomain": "avkit-with-tableview.firebaseapp.com",
-    "databaseURL": "https://avkit-with-tableview-default-rtdb.firebaseio.com",
-    "projectId": "avkit-with-tableview",
-    "storageBucket": "avkit-with-tableview.appspot.com",
-    "messagingSenderId": "37795166720",
-    "appId": "1:37795166720:web:53d378fd709ce2ce7236e5",
-    "measurementId": "G-XKW8F4TK14"
+
 };
 
 firebase = pyrebase.initialize_app(config)
